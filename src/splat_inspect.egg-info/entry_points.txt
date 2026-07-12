@@ -1,0 +1,2 @@
+[console_scripts]
+splat-inspect = splatinspect.cli:main

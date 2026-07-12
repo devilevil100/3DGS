@@ -1,0 +1,16 @@
+{
+  "gaussians": 9312,
+  "novel_view_psnr": 14.127,
+  "novel_view_ssim": 0.5607,
+  "render_ms": 245.04,
+  "fps": 4.1,
+  "resolution": [
+    192,
+    144
+  ],
+  "steps": 800,
+  "train_seconds": 698.5,
+  "device": "cuda",
+  "n_views": 11,
+  "n_holdout": 2
+}

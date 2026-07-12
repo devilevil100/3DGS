@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: splat-inspect
+Version: 0.1.0
+Summary: From-scratch 3D Gaussian Splatting engine (pure PyTorch) with a real-photo COLMAP pipeline and interactive viewer.
+Requires-Python: >=3.10
+Requires-Dist: torch>=2.4
+Requires-Dist: numpy>=1.24
+Requires-Dist: pillow>=10.0
+Requires-Dist: matplotlib>=3.7
+Requires-Dist: opencv-python-headless>=4.9
+Provides-Extra: sfm
+Requires-Dist: pycolmap>=4.0; extra == "sfm"
+Provides-Extra: viewer
+Requires-Dist: fastapi; extra == "viewer"
+Requires-Dist: uvicorn; extra == "viewer"
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"

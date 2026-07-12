@@ -1,0 +1,8 @@
+# install torch matched to your CUDA driver, e.g. cu124:
+#   pip install --index-url https://download.pytorch.org/whl/cu124 torch
+torch>=2.4
+numpy>=1.24
+matplotlib>=3.7
+pillow>=10.0
+opencv-python-headless>=4.9
+pycolmap>=4.0          # structure-from-motion for the real-photo path (no sudo)

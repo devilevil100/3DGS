@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "splat-inspect"
+version = "0.1.0"
+description = "From-scratch 3D Gaussian Splatting engine (pure PyTorch) with a real-photo COLMAP pipeline and interactive viewer."
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.4",
+    "numpy>=1.24",
+    "pillow>=10.0",
+    "matplotlib>=3.7",
+    "opencv-python-headless>=4.9",
+]
+
+[project.optional-dependencies]
+sfm = ["pycolmap>=4.0"]          # real-photo pose estimation
+viewer = ["fastapi", "uvicorn"]  # interactive browser viewer
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+splat-inspect = "splatinspect.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
