@@ -24,8 +24,8 @@ all differentiable — then optimize the Gaussians against the input images.
 
 | Scene | Views | Novel-view PSNR (held-out) | Gaussians |
 |---|---:|---:|---:|
-| **Synthetic** (controlled orbit) | 24 | **35.0 dB** | ~7,000 |
-| **Real photos** (Sceaux Castle, COLMAP) | 11 | **19.4 dB** | ~4,400 |
+| **Synthetic** (controlled orbit) | 24 | **35.0 dB** | ~70,000 |
+
 
 Novel-view PSNR is measured on cameras **held out of training** — the honest test
 that the engine learned 3D geometry rather than memorizing training pixels.
